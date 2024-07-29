@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Tabasco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        /* Estilos adicionales */
+        body {
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #4CAF50;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .dropdown-menu {
+            background-color: #4CAF50;
+        }
+        .dropdown-item:hover {
+            background-color: #45a049;
+        }
+        .intro-section {
+            background-image: url('https://via.placeholder.com/1600x500');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .intro-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .intro-section p {
+            font-size: 1.2em;
+        }
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-title {
+            color: #333;
+        }
+        a.dropdown-item {
+            color: #fff !important;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Tabasco Turístico</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <!-- Dropdown para filtrar por municipios -->
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle btn btn-link" id="municipiosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Municipios
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="municipiosDropdown">
+                        <li><a class="dropdown-item" href="municipios.html">Ver Todos</a></li>
+                        <li><a class="dropdown-item" href="balancan.html">Balancán</a></li>
+                        <li><a class="dropdown-item" href="cardenas.html">Cárdenas</a></li>
+                        <li><a class="dropdown-item" href="centla.html">Centla</a></li>
+                        <li><a class="dropdown-item" href="centro.html">Centro</a></li>
+                        <li><a class="dropdown-item" href="comalcalco.html">Comalcalco</a></li>
+                        <li><a class="dropdown-item" href="cunduacan.html">Cunduacán</a></li>
+                        <li><a class="dropdown-item" href="emilianozapata.html">Emiliano Zapata</a></li>
+                        <li><a class="dropdown-item" href="huimanguillo.html">Huimanguillo</a></li>
+                        <li><a class="dropdown-item" href="jalapa.html">Jalapa</a></li>
+                        <li><a class="dropdown-item" href="jalpamendez.html">Jalpa de Méndez</a></li>
+                        <li><a class="dropdown-item" href="jonuta.html">Jonuta</a></li>
+                        <li><a class="dropdown-item" href="macuspana.html">Macuspana</a></li>
+                        <li><a class="dropdown-item" href="nacajuca.html">Nacajuca</a></li>
+                        <li><a class="dropdown-item" href="paraiso.html">Paraíso</a></li>
+                        <li><a class="dropdown-item" href="tacotalpa.html">Tacotalpa</a></li>
+                        <li><a class="dropdown-item" href="teapa.html">Teapa</a></li>
+                        <li><a class="dropdown-item" href="tenosique.html">Tenosique</a></li>
+                        <!-- Agrega más municipios aquí -->
+                    </ul>
+                </li>
+                <!-- Nuevo menú para información del estado -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="informacion.html" id="informacionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Información
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="informacionDropdown">
+                        <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                        <li><a class="dropdown-item" href="clima.html">Clima</a></li>
+                        <li><a class="dropdown-item" href="tradiciones.html">Tradiciones</a></li>
+                        <li><a class="dropdown-item" href="gastronomia.html">Gastronomía</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Sección de introducción -->
+    <section class="intro-section">
+        <div class="container">
+            <h1>Descubre Tabasco</h1>
+            <p>Explora la rica historia, el vibrante clima, las tradiciones únicas y la deliciosa gastronomía de Tabasco. Sumérgete en la cultura de este fascinante estado.</p>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <div class="row" id="informacion">
+            <!-- Tarjeta de Historia -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Historia">
+                    <div class="card-body">
+                        <h5 class="card-title">Historia de Tabasco</h5>
+                        <p class="card-text">Conoce el pasado de Tabasco, desde sus raíces indígenas hasta la influencia colonial y su desarrollo a través de los siglos. Descubre eventos históricos clave y figuras importantes que han moldeado la región.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Historia de Tabasco" data-bs-content="Explora la historia completa de Tabasco, incluyendo eventos clave, figuras históricas y el impacto cultural y social en la región.">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de Clima -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Clima">
+                    <div class="card-body">
+                        <h5 class="card-title">Clima de Tabasco</h5>
+                        <p class="card-text">Descubre el clima tropical de Tabasco, con lluvias abundantes y temperaturas cálidas durante todo el año. Aprende cómo el clima influye en la vida cotidiana y en la flora y fauna de la región.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Clima de Tabasco" data-bs-content="Información detallada sobre el clima en Tabasco, incluyendo patrones de precipitación, temperatura y cómo estos factores afectan la región y sus habitantes.">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de Tradiciones -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Tradiciones">
+                    <div class="card-body">
+                        <h5 class="card-title">Tradiciones de Tabasco</h5>
+                        <p class="card-text">Explora las tradiciones y festividades locales que hacen de Tabasco un lugar único. Conoce danzas, festivales y celebraciones que reflejan la riqueza cultural de la región.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Tradiciones de Tabasco" data-bs-content="Conoce las festividades y tradiciones que forman parte de la identidad cultural de Tabasco, incluyendo celebraciones, danzas y costumbres locales que mantienen viva la herencia cultural.">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de Gastronomía -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Gastronomía">
+                    <div class="card-body">
+                        <h5 class="card-title">Gastronomía de Tabasco</h5>
+                        <p class="card-text">Descubre la rica gastronomía de Tabasco, famosa por sus sabores intensos y platos tradicionales como el pejelagarto y los tamales. Aprende sobre ingredientes típicos y recetas locales.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Gastronomía de Tabasco" data-bs-content="Explora los platos típicos y sabores característicos de la gastronomía tabasqueña, incluyendo ingredientes, recetas tradicionales y la influencia de la cultura en la cocina local.">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal con información adicional -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title " id="infoModalLabel">Título del Tema</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <p id="modalContent">Contenido del tema.</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Tabasco Turístico. Todos los derechos reservados.</p>
+        <a href="historia.html">Historia</a>
+        <a href="clima.html">Clima</a>
+        <a href="tradiciones.html">Tradiciones</a>
+        <a href="gastronomia.html">Gastronomía</a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Actualizar contenido del modal según el botón clickeado
+    document.querySelectorAll('.btn-primary').forEach(button => {
+        button.addEventListener('click', () => {
+            const title = button.getAttribute('data-bs-title');
+            const content = button.getAttribute('data-bs-content');
+            document.getElementById('infoModalLabel').textContent = title;
+            document.getElementById('modalContent').textContent = content;
+        });
+    });
+</script>
+</body>
+</html>
