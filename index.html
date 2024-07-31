@@ -87,7 +87,7 @@
                     <p id="modalContent">Contenido del tema.</p>
                 </div>
                 <div class="modal-footer">
-                    <a id="modalLink" href="#" class="btn btn-primary" target="_blank">Leer más</a>
+                    <a id="modalLink" href="#" class="btn btn-primary" target="_blank" style="display: none;">Leer más</a>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
@@ -105,6 +105,10 @@
                 const content = button.getAttribute('data-bs-content');
                 const url = button.getAttribute('data-bs-url');
                 
+                console.log(`Title: ${title}`);
+                console.log(`Content: ${content}`);
+                console.log(`URL: ${url}`);
+
                 // Actualiza el contenido del modal
                 document.getElementById('infoModalLabel').textContent = title;
                 document.getElementById('modalContent').textContent = content;
