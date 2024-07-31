@@ -15,7 +15,8 @@ body {
     background-color: #45a049;
 }
 .intro-section {
-    background-image: url('/img/index.jpeg');
+    background-image: url('https://1yubran1.github.io/TabascoTuristico/img/index.jpeg');
+
     background-size: cover; /* Cambiado a 'cover' para que la imagen cubra completamente el área */
     background-position: center;
     background-repeat: no-repeat; /* Asegura que la imagen no se repita */
