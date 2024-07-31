@@ -15,7 +15,7 @@
             background-color: #45a049;
         }
         .intro-section {
-            background-image: url('/img/index.jpeg');
+            background-image: url('img/index.jpeg');
             background-size: fluid;
             background-position: center;
             color: white;
