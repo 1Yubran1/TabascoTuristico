@@ -27,7 +27,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Historia de Tabasco</h5>
                         <p class="card-text">Conoce el pasado de Tabasco, desde sus raíces indígenas hasta la influencia colonial y su desarrollo a través de los siglos. Descubre eventos históricos clave y figuras importantes que han moldeado la región.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Historia de Tabasco" data-bs-content="Explora la historia completa de Tabasco, incluyendo eventos clave, figuras históricas y el impacto cultural y social en la región.">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Historia de Tabasco" data-bs-content="Explora la historia completa de Tabasco, incluyendo eventos clave, figuras históricas y el impacto cultural y social en la región." data-bs-url="historia.html">
                             Ver más
                         </button>
                     </div>
@@ -40,7 +40,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Clima de Tabasco</h5>
                         <p class="card-text">Descubre el clima tropical de Tabasco, con lluvias abundantes y temperaturas cálidas durante todo el año. Aprende cómo el clima influye en la vida cotidiana y en la flora y fauna de la región.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Clima de Tabasco" data-bs-content="Información detallada sobre el clima en Tabasco, incluyendo patrones de precipitación, temperatura y cómo estos factores afectan la región y sus habitantes.">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Clima de Tabasco" data-bs-content="Información detallada sobre el clima en Tabasco, incluyendo patrones de precipitación, temperatura y cómo estos factores afectan la región y sus habitantes." data-bs-url="clima.html">
                             Ver más
                         </button>
                     </div>
@@ -53,7 +53,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Tradiciones de Tabasco</h5>
                         <p class="card-text">Explora las tradiciones y festividades locales que hacen de Tabasco un lugar único. Conoce danzas, festivales y celebraciones que reflejan la riqueza cultural de la región.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Tradiciones de Tabasco" data-bs-content="Conoce las festividades y tradiciones que forman parte de la identidad cultural de Tabasco, incluyendo celebraciones, danzas y costumbres locales que mantienen viva la herencia cultural.">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Tradiciones de Tabasco" data-bs-content="Conoce las festividades y tradiciones que forman parte de la identidad cultural de Tabasco, incluyendo celebraciones, danzas y costumbres locales que mantienen viva la herencia cultural." data-bs-url="tradiciones.html">
                             Ver más
                         </button>
                     </div>
@@ -66,7 +66,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Gastronomía de Tabasco</h5>
                         <p class="card-text">Descubre la rica gastronomía de Tabasco, famosa por sus sabores intensos y platos tradicionales como el pejelagarto y los tamales. Aprende sobre ingredientes típicos y recetas locales.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Gastronomía de Tabasco" data-bs-content="Explora los platos típicos y sabores característicos de la gastronomía tabasqueña, incluyendo ingredientes, recetas tradicionales y la influencia de la cultura en la cocina local.">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-title="Gastronomía de Tabasco" data-bs-content="Explora los platos típicos y sabores característicos de la gastronomía tabasqueña, incluyendo ingredientes, recetas tradicionales y la influencia de la cultura en la cocina local." data-bs-url="gastronomia.html">
                             Ver más
                         </button>
                     </div>
@@ -80,13 +80,14 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title " id="infoModalLabel">Título del Tema</h5>
+                    <h5 class="modal-title" id="infoModalLabel">Título del Tema</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+                </div>
+                <div class="modal-body">
                     <p id="modalContent">Contenido del tema.</p>
-                    </div>
-                    <div class="modal-footer">
+                </div>
+                <div class="modal-footer">
+                    <a id="modalLink" href="#" class="btn btn-primary" target="_blank">Leer más</a>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
@@ -95,28 +96,36 @@
 
     <div id="footer"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // Actualizar contenido del modal según el botón clickeado
-    document.querySelectorAll('.btn-primary').forEach(button => {
-        button.addEventListener('click', () => {
-            const title = button.getAttribute('data-bs-title');
-            const content = button.getAttribute('data-bs-content');
-            document.getElementById('infoModalLabel').textContent = title;
-            document.getElementById('modalContent').textContent = content;
-        });
-    });
-</script>
-<script>
-    // Cargar el header
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('header').innerHTML = data);
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Actualizar contenido del modal y enlace según el botón clickeado
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', () => {
+                const title = button.getAttribute('data-bs-title');
+                const content = button.getAttribute('data-bs-content');
+                const url = button.getAttribute('data-bs-url');
+                
+                // Actualiza el contenido del modal
+                document.getElementById('infoModalLabel').textContent = title;
+                document.getElementById('modalContent').textContent = content;
 
-    // Cargar el footer
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('footer').innerHTML = data);
-</script>
+                // Actualiza el enlace del modal
+                const modalLink = document.getElementById('modalLink');
+                modalLink.setAttribute('href', url);
+                modalLink.style.display = url ? 'inline-block' : 'none';
+            });
+        });
+    </script>
+    <script>
+        // Cargar el header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Cargar el footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </body>
 </html>
