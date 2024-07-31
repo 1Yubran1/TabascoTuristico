@@ -1,63 +1,64 @@
-        /* Estilos adicionales */
-        body {
-            background-color: #f4f4f4;
-        }
-        .navbar {
-            background-color: #4CAF50;
-        }
-        .navbar-brand, .nav-link {
-            color: #fff !important;
-        }
-        .dropdown-menu {
-            background-color: #4CAF50;
-        }
-        .dropdown-item:hover {
-            background-color: #45a049;
-        }
-        .intro-section {
-            background-image: url('img/index.jpeg');
-            background-size: fluid;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-        }
-        .intro-section h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        .intro-section p {
-            font-size: 1.2em;
-        }
-        .card {
-            margin-bottom: 20px;
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card img {
-            height: 200px;
-            object-fit: cover;
-        }
-        .card-title {
-            color: #333;
-        }
-        a.dropdown-item {
-            color: #fff !important;
-        }
-        .footer {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
+/* Estilos adicionales */
+body {
+    background-color: #f4f4f4;
+}
+.navbar {
+    background-color: #4CAF50;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.dropdown-menu {
+    background-color: #4CAF50;
+}
+.dropdown-item:hover {
+    background-color: #45a049;
+}
+.intro-section {
+    background-image: url('/img/index.jpeg');
+    background-size: cover; /* Cambiado a 'cover' para que la imagen cubra completamente el área */
+    background-position: center;
+    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+.intro-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.intro-section p {
+    font-size: 1.2em;
+}
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.card-title {
+    color: #333;
+}
+a.dropdown-item {
+    color: #fff !important;
+}
+.footer {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
