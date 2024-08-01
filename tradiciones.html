@@ -10,12 +10,75 @@
 <body>
     <!-- Header -->
     <div id="header"></div>
+
     <!-- Contenido de la página -->
+    <div class="container mt-4">
+        <h1>Tradiciones de Tabasco</h1>
+        <p>Descubre las festividades y tradiciones que hacen de Tabasco un lugar único. Conoce las danzas, celebraciones y costumbres que reflejan la rica herencia cultural de la región.</p>
 
+        <!-- Acordeón de tradiciones -->
+        <div class="accordion" id="tradicionesAccordion">
+            <!-- Fiesta de la Candelaria -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCandelaria">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCandelaria" aria-expanded="true" aria-controls="collapseCandelaria">
+                        Fiesta de la Candelaria
+                    </button>
+                </h2>
+                <div id="collapseCandelaria" class="accordion-collapse collapse show" aria-labelledby="headingCandelaria" data-bs-parent="#tradicionesAccordion">
+                    <div class="accordion-body">
+                        <p>La Fiesta de la Candelaria, celebrada el 2 de febrero, es una festividad religiosa que honra a la Virgen de la Candelaria. En esta celebración, los habitantes de Tabasco participan en procesiones, misas y festividades con comidas tradicionales y eventos culturales.</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Carnaval de Villahermosa -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCarnaval">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCarnaval" aria-expanded="false" aria-controls="collapseCarnaval">
+                        Carnaval de Villahermosa
+                    </button>
+                </h2>
+                <div id="collapseCarnaval" class="accordion-collapse collapse" aria-labelledby="headingCarnaval" data-bs-parent="#tradicionesAccordion">
+                    <div class="accordion-body">
+                        <p>El Carnaval de Villahermosa es una de las festividades más grandes y coloridas de Tabasco. Celebrado en febrero, el carnaval incluye desfiles, bailes y concursos de disfraces, destacando la alegría y la cultura de la región.</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Feria Tabasco -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFeria">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFeria" aria-expanded="false" aria-controls="collapseFeria">
+                        Feria Tabasco
+                    </button>
+                </h2>
+                <div id="collapseFeria" class="accordion-collapse collapse" aria-labelledby="headingFeria" data-bs-parent="#tradicionesAccordion">
+                    <div class="accordion-body">
+                        <p>La Feria Tabasco es un evento anual que se realiza en Villahermosa y presenta una amplia variedad de actividades, incluyendo exposiciones de productos locales, eventos culturales y espectáculos en vivo. Es una oportunidad para que los visitantes experimenten la cultura y las tradiciones de Tabasco.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Día de la Madre -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDiaMadre">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiaMadre" aria-expanded="false" aria-controls="collapseDiaMadre">
+                        Día de la Madre
+                    </button>
+                </h2>
+                <div id="collapseDiaMadre" class="accordion-collapse collapse" aria-labelledby="headingDiaMadre" data-bs-parent="#tradicionesAccordion">
+                    <div class="accordion-body">
+                        <p>El Día de la Madre, celebrado el 10 de mayo, es una fecha especial en la que los tabasqueños honran a las madres con reuniones familiares, regalos y celebraciones especiales. Es un día para expresar gratitud y aprecio hacia las figuras maternas en la vida de cada persona.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
     <!-- Footer -->
     <div id="footer"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Cargar el header

@@ -31,6 +31,13 @@ body {
 .intro-section p {
     font-size: 1.2em;
 }
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px; 
+}
+p {
+    font-size: 1.2em;
+}
 .card {
     margin-bottom: 20px;
     transition: transform 0.2s;

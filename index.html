@@ -115,8 +115,12 @@
 
                 // Actualiza el enlace del modal
                 const modalLink = document.getElementById('modalLink');
-                modalLink.setAttribute('href', url);
-                modalLink.style.display = url ? 'inline-block' : 'none';
+                if (url) {
+                    modalLink.setAttribute('href', url);
+                    modalLink.style.display = 'inline-block';
+                } else {
+                    modalLink.style.display = 'none';
+                }
             });
         });
     </script>
